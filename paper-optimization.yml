@@ -1,0 +1,54 @@
+HANYA untuk menimpa file: config/paper-global.yml
+​Pengaturan Anti-X-Ray dan Anti-Lag tingkat lanjut
+​--- Konfigurasi Keamanan (Anti-X-Ray) ---
+​anti-xray:
+enabled: true
+engine-mode: 2 # Mode 2 (Cairn) adalah yang terbaik untuk performa dan penyembunyian
+hide-blocks:
+- copper_ore
+- deepslate_copper_ore
+- gold_ore
+- deepslate_gold_ore
+- iron_ore
+- deepslate_iron_ore
+- coal_ore
+- deepslate_coal_ore
+- lapis_ore
+- deepslate_lapis_ore
+- diamond_ore
+- deepslate_diamond_ore
+- redstone_ore
+- deepslate_redstone_ore
+- emerald_ore
+- deepslate_emerald_ore
+- clay
+​--- Konfigurasi Anti-Lag ---
+​chunks:
+max-auto-save-chunks-per-tick: 6
+prevent-moving-into-unloaded-chunks: true
+keep-spawn-loaded: true
+keep-spawn-loaded-range: 6
+​collisions:
+allow-piston-duplication: false
+max-entity-collisions: 2
+​entity-tracking-range:
+animals: 32
+monsters: 32
+misc: 16
+players: 48
+​misc:
+disable-teleportation-suffocation-check: true
+allow-leash-into-unloaded-chunks: false
+armor-stands-tick: false
+​tick-rates:
+hopper: 8
+container-loot: 4
+​world-settings:
+default:
+optimize-explosions: true
+despawn-ranges:
+soft: 32
+hard: 96
+game-mechanics:
+disable-mob-griefing: true
+disable-chest-boat-on-death: true
